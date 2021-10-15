@@ -1,4 +1,4 @@
-// https://play.tailwindcss.com/vOVzk1H7IM?size=990x720
+// https://play.tailwindcss.com/gJZ7cv86PM?size=1100x720
 
 import { withOGImage } from "next-api-og-image";
 
@@ -8,7 +8,7 @@ export default withOGImage({
       <>
         <head>
           <link
-            href="https://unpkg.com/tailwindcss-jit-cdn@1.3.0/dist/tailwindcss-jit-cdn.umd.min.js"
+            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
             rel="stylesheet"
           />
           <link
@@ -20,10 +20,10 @@ export default withOGImage({
           className="min-h-screen bg-gray-100 p-12 flex flex-col justify-center gap-4"
           style={{ fontFamily: "Lexend" }}
         >
-          <h1 className="text-[3rem] font-bold text-blue-400 leading-tight">
+          <h1 className="text-6xl font-bold text-blue-400 leading-tight">
             {heading}
           </h1>
-          <p className="font-medium text-[1.5rem] text-gray-500">{text}</p>
+          <p className="font-medium text-3xl text-gray-500">{text}</p>
         </div>
       </>
     ),
