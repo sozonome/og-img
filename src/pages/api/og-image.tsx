@@ -7,10 +7,7 @@ export default withOGImage({
     react: ({ heading, text }) => (
       <>
         <head>
-          <link
-            href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-            rel="stylesheet"
-          />
+          <link href="https://unpkg.com/tailwindcss-jit-cdn" rel="stylesheet" />
           <link
             href="https://unpkg.com/@fontsource/lexend@4.5.1/latin.css"
             rel="stylesheet"
