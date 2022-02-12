@@ -11,7 +11,7 @@ import defaultSEOConfig from "../../next-seo.config";
 import Layout from "lib/components/layout";
 import createEmotionCache from "lib/styles/createEmotionCache";
 import customTheme from "lib/styles/customTheme";
-import "styles/globals.css";
+import "lib/styles/globals.css";
 
 const clientSideEmotionCache = createEmotionCache();
 
