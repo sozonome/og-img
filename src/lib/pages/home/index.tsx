@@ -1,16 +1,28 @@
-import { Box } from "@chakra-ui/react";
-
-import CTASection from "lib/components/CTASection";
-import SomeImage from "lib/components/SomeImage";
-import SomeText from "lib/components/SomeText";
+import { Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 const Home = () => {
   return (
-    <Box mb={8} w="full">
-      <SomeText />
-      <SomeImage />
-      <CTASection />
-    </Box>
+    <Stack
+      mb={8}
+      w="full"
+      textAlign="center"
+      minHeight="70vh"
+      justifyContent="center"
+    >
+      <Heading>🖼️ og-img</Heading>
+      <Text>
+        Serverless service to generate embeddable dynamic OpenGraph image
+      </Text>
+
+      <Flex justifyContent="center">
+        <Link href="/generate" passHref>
+          <Button as="a" colorScheme="teal">
+            Generate
+          </Button>
+        </Link>
+      </Flex>
+    </Stack>
   );
 };
 
