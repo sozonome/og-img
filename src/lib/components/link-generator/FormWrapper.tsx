@@ -25,19 +25,6 @@ const LinkGeneratorFormWrapper = ({
         control={control}
         placeholder="Description text"
       />
-
-      {/* <Accordion allowToggle>
-            <AccordionItem>
-              <Heading size="sm">
-                <AccordionButton>
-                  <Box flex={1} textAlign="left">
-                    Options
-                  </Box>
-                  <AccordionIcon />
-                </AccordionButton>
-              </Heading>
-            </AccordionItem>
-          </Accordion> */}
     </>
   );
 };
