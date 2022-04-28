@@ -1,5 +1,8 @@
 /* eslint-disable @next/next/no-head-element */
 // https://play.tailwindcss.com/TYb0XtCyeG?size=1100x720
+/**
+ * https://github.com/neg4n/next-api-og-image#configuration
+ */
 
 import { withOGImage } from "next-api-og-image";
 
@@ -28,5 +31,14 @@ export default withOGImage({
         </div>
       </>
     ),
+  },
+  type: "png",
+  dev: {
+    // Whether to replace binary data (image/screenshot) with HTML
+    // that can be debugged in Developer Tools
+    inspectHtml: true,
+    // Whether to set error message in response
+    // if there are strategy related errors
+    errorsInResponse: true,
   },
 });
