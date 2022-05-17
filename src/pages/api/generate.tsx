@@ -32,13 +32,13 @@ export default withOGImage({
       </>
     ),
   },
-  type: "png",
-  dev: {
-    // Whether to replace binary data (image/screenshot) with HTML
-    // that can be debugged in Developer Tools
-    inspectHtml: true,
-    // Whether to set error message in response
-    // if there are strategy related errors
-    errorsInResponse: true,
-  },
+  // type: "png",
+  // dev: {
+  //   // Whether to replace binary data (image/screenshot) with HTML
+  //   // that can be debugged in Developer Tools
+  //   inspectHtml: true,
+  //   // Whether to set error message in response
+  //   // if there are strategy related errors
+  //   errorsInResponse: true,
+  // },
 });
