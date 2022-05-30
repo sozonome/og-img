@@ -19,14 +19,14 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.0.2",
+    "@chakra-ui/react": "^2.1.2",
     "@emotion/cache": "^11.7.1",
     "@emotion/react": "^11.9.0",
     "@emotion/server": "^11.4.0",
     "@emotion/styled": "^11.8.1",
     "@fontsource/outfit": "^4.5.8",
     "chrome-aws-lambda": "6.0.0",
-    "framer-motion": "^6.3.3",
+    "framer-motion": "^6.3.4",
     "lodash-es": "^4.17.21",
     "next": "12.1.6",
     "next-api-og-image": "4.0.1",
@@ -34,22 +34,22 @@
     "next-seo": "^5.4.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-hook-form": "^7.31.2",
+    "react-hook-form": "^7.31.3",
     "react-icons": "^4.3.1"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.0",
     "@types/lodash-es": "^4.17.6",
     "@types/react": "^18.0.9",
-    "commitlint": "^17.0.0",
+    "commitlint": "^17.0.1",
     "eslint": "^8.16.0",
     "eslint-config-next": "12.1.6",
     "eslint-config-sznm": "^1.0.0",
     "husky": "^8.0.1",
-    "lint-staged": "^12.4.1",
-    "next-sitemap": "^2.5.21",
+    "lint-staged": "^12.4.2",
+    "next-sitemap": "^2.5.25",
     "prettier": "^2.6.2",
     "standard-version": "^9.5.0",
-    "typescript": "^4.6.4"
+    "typescript": "^4.7.2"
   }
 }
