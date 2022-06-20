@@ -20,10 +20,10 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.2.1",
-    "@emotion/cache": "^11.7.1",
-    "@emotion/react": "^11.9.0",
+    "@emotion/cache": "^11.9.3",
+    "@emotion/react": "^11.9.3",
     "@emotion/server": "^11.4.0",
-    "@emotion/styled": "^11.8.1",
+    "@emotion/styled": "^11.9.3",
     "@fontsource/outfit": "^4.5.8",
     "chrome-aws-lambda": "6.0.0",
     "framer-motion": "^6.3.11",
@@ -32,24 +32,24 @@
     "next-api-og-image": "4.0.1",
     "next-pwa": "^5.5.4",
     "next-seo": "^5.4.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-hook-form": "^7.32.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.32.2",
     "react-icons": "^4.4.0"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
     "@types/lodash-es": "^4.17.6",
-    "@types/react": "^18.0.12",
+    "@types/react": "^18.0.14",
     "commitlint": "^17.0.2",
-    "eslint": "^8.17.0",
+    "eslint": "^8.18.0",
     "eslint-config-next": "12.1.6",
     "eslint-config-sznm": "^1.0.0",
     "husky": "^8.0.1",
     "lint-staged": "^12.5.0",
     "next-sitemap": "^2.5.28",
-    "prettier": "^2.6.2",
+    "prettier": "^2.7.1",
     "standard-version": "^9.5.0",
-    "typescript": "^4.7.3"
+    "typescript": "^4.7.4"
   }
 }
