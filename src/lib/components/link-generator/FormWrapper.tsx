@@ -1,9 +1,10 @@
 import type { Control } from "react-hook-form";
 
 import RHFControlledInput from "lib/components/shared/form/RHFControlledInput";
+import type { OgImageOption } from "lib/types/ogImageOption";
 
 type LinkGeneratorFormWrapperProps = {
-  control: Control;
+  control: Control<OgImageOption, object>;
 };
 
 const LinkGeneratorFormWrapper = ({
