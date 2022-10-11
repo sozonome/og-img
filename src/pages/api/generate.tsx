@@ -18,10 +18,10 @@ export default async function handler(req: NextRequest) {
 
   return new ImageResponse(
     (
-      <div tw="w-screen h-screen bg-black p-12 flex flex-col justify-center gap-4">
+      <div tw="w-screen h-screen p-12 flex flex-col justify-center bg-black">
         {heading && (
           <h1
-            tw="text-6xl font-regular text-gray-300 leading-tight"
+            tw="text-6xl font-bold text-gray-300 leading-tight"
             style={{ fontFamily: "Outfit-Bold" }}
           >
             {heading}
