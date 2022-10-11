@@ -11,9 +11,7 @@ const Home = () => {
       justifyContent="center"
     >
       <Heading>🖼️ og-img</Heading>
-      <Text>
-        Serverless service to generate embeddable dynamic OpenGraph image
-      </Text>
+      <Text>Edge service to generate embeddable dynamic OpenGraph image</Text>
 
       <Flex justifyContent="center">
         <Link href="/generate" passHref>

@@ -10,10 +10,12 @@ import { buildOgImageUrl } from "lib/utils/buildOgImageUrl";
 
 const Generate: NextPage = () => {
   const toast = useToast();
-  const { watch, control, handleSubmit } = useForm<OgImageOption>();
-  const [imgUrl, setImgUrl] = React.useState<string>(
-    "https://og.sznm.dev/api/generate?heading=Some-Title&text=some-description"
-  );
+  const { watch, control } = useForm<OgImageOption>({
+    defaultValues: {
+      heading: "Some Title",
+      text: "Some description",
+    },
+  });
 
   const values = watch();
 
@@ -33,10 +35,6 @@ const Generate: NextPage = () => {
     });
   };
 
-  const onSubmit = () => {
-    setImgUrl(ogImageUrl);
-  };
-
   return (
     <Stack spacing={8} minHeight="70vh" justifyContent="center">
       <Heading size="lg" color="teal">
@@ -51,17 +49,17 @@ const Generate: NextPage = () => {
         gap={12}
         alignItems="center"
       >
-        <Stack as="form" onSubmit={handleSubmit(onSubmit)} spacing={6}>
+        <Stack spacing={6}>
           <LinkGeneratorFormWrapper control={control} />
 
-          <Button type="submit" colorScheme="teal">
-            Generate
+          <Button colorScheme="teal" onClick={handleClickCopy}>
+            Copy URL
           </Button>
         </Stack>
 
         <Stack spacing={6}>
           <LinkGeneratorResultSection
-            generatedImageUrl={imgUrl}
+            generatedImageUrl={ogImageUrl}
             ogImageUrl={ogImageUrl}
             onClick={handleClickCopy}
           />
