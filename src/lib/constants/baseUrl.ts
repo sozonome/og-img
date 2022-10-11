@@ -1,1 +1,1 @@
-export const baseUrl = `https://og.sznm.dev`;
+export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL ?? "";
