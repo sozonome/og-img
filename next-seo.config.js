@@ -11,8 +11,8 @@ const defaultSEOConfig = {
     description: "OpenGgraph image serverless service",
     images: [
       {
-        url: "https://og-image.sznm.dev/**nextarter-chakra**.sznm.dev.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fsznm.dev%2Favataaars.svg&widths=250",
-        alt: "og-image",
+        url: "https://og.sznm.dev/api/generate?heading=Open%20Graph%20Image%20Generator&text=https://og.sznm.dev",
+        alt: "og-img",
       },
     ],
     site_name: "og-img",
