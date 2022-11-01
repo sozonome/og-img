@@ -8,5 +8,5 @@ export const buildOgImageUrl = (options: OgImageOption) => {
   const urlParams = new URLSearchParams(purgedOptions).toString();
   const params = urlParams ? `?${urlParams}` : "";
 
-  return `${baseUrl}/api/generate${params}`;
+  return `${window.location.origin ?? baseUrl}/api/generate${params}`;
 };
