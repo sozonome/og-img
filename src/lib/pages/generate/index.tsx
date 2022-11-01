@@ -10,7 +10,7 @@ import { buildOgImageUrl } from "lib/utils/buildOgImageUrl";
 
 const Generate: NextPage = () => {
   const toast = useToast();
-  const { watch, control } = useForm<OgImageOption>({
+  const { watch, register } = useForm<OgImageOption>({
     defaultValues: {
       heading: "Some Title",
       text: "Some description",
@@ -50,7 +50,7 @@ const Generate: NextPage = () => {
         alignItems="center"
       >
         <Stack spacing={6}>
-          <LinkGeneratorFormWrapper control={control} />
+          <LinkGeneratorFormWrapper register={register} />
 
           <Button colorScheme="teal" onClick={handleClickCopy}>
             Copy URL
