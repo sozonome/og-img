@@ -2,7 +2,7 @@
 import { ImageResponse } from "@vercel/og";
 import type { NextRequest } from "next/server";
 
-import BaseTemplate from "lib/components/image-templates/BaseTemplate";
+import TemplateSwitcher from "lib/components/image-templates/TemplateWrapper";
 import { outfitBold, outfitMedium } from "lib/utils/font/outfit";
 
 export const config = {
@@ -16,9 +16,10 @@ export default async function handler(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const heading = searchParams.get("heading")?.slice(0, 100);
   const text = searchParams.get("text")?.slice(0, 200);
-  const baseTemplateProps = { heading, text };
+  const template = searchParams.get("template")?.slice(0, 200);
+  const templateProps = { heading, text, template };
 
-  return new ImageResponse(<BaseTemplate {...baseTemplateProps} />, {
+  return new ImageResponse(<TemplateSwitcher {...templateProps} />, {
     fonts: [
       {
         name: "Outfit-Medium",

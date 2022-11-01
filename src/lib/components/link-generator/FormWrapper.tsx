@@ -1,30 +1,36 @@
-import type { Control } from "react-hook-form";
+import type { UseFormRegister } from "react-hook-form";
 
-import RHFControlledInput from "lib/components/shared/form/RHFControlledInput";
+import ControlledInput from "lib/components/shared/form/ControlledInput";
+import ControlledSelect from "lib/components/shared/form/ControlledSelect";
+import { templateOptions } from "lib/constants/template-option";
 import type { OgImageOption } from "lib/types/ogImageOption";
+import { generateOptions } from "lib/utils/generateOptions";
 
 type LinkGeneratorFormWrapperProps = {
-  control: Control<OgImageOption, object>;
+  register: UseFormRegister<OgImageOption>;
 };
 
 const LinkGeneratorFormWrapper = ({
-  control,
+  register,
 }: LinkGeneratorFormWrapperProps) => {
   return (
     <>
-      <RHFControlledInput
+      <ControlledInput
+        {...register("heading")}
         label="Heading"
         size="lg"
         placeholder="Heading text"
-        name="heading"
-        control={control}
       />
-      <RHFControlledInput
+      <ControlledInput
+        {...register("text")}
         label="Text"
         size="sm"
-        name="text"
-        control={control}
         placeholder="Description text"
+      />
+      <ControlledSelect
+        {...register("template")}
+        label="Template"
+        options={generateOptions(templateOptions)}
       />
     </>
   );
