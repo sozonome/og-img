@@ -1,3 +1,4 @@
+import { Checkbox } from "@chakra-ui/react";
 import type { UseFormRegister } from "react-hook-form";
 
 import ControlledInput from "lib/components/shared/form/ControlledInput";
@@ -32,6 +33,7 @@ const LinkGeneratorFormWrapper = ({
         label="Template"
         options={generateOptions(templateOptions)}
       />
+      <Checkbox {...register("center")}>center</Checkbox>
     </>
   );
 };

@@ -17,7 +17,8 @@ export default async function handler(req: NextRequest) {
   const heading = searchParams.get("heading")?.slice(0, 100);
   const text = searchParams.get("text")?.slice(0, 200);
   const template = searchParams.get("template")?.slice(0, 200);
-  const templateProps = { heading, text, template };
+  const center = Boolean(searchParams.get("center"));
+  const templateProps = { heading, text, template, center };
 
   return new ImageResponse(<TemplateSwitcher {...templateProps} />, {
     fonts: [

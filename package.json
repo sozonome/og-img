@@ -24,6 +24,7 @@
     "@emotion/styled": "^11.10.4",
     "@fontsource/outfit": "^4.5.9",
     "@vercel/og": "^0.0.19",
+    "clsx": "^1.2.1",
     "framer-motion": "^7.5.3",
     "lodash-es": "^4.17.21",
     "next": "^12.3.1",
