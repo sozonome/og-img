@@ -18,8 +18,8 @@ export default async function handler(req: NextRequest) {
   const text = searchParams.get("text")?.slice(0, 200);
   const template = searchParams.get("template")?.slice(0, 200);
   const center = Boolean(searchParams.get("center"));
-  const width = Number(searchParams.get("width")) ?? 1200;
-  const height = Number(searchParams.get("height")) ?? 630;
+  const width = Number(searchParams.get("width") ?? 1200);
+  const height = Number(searchParams.get("height") ?? 630);
   const templateProps = { heading, text, template, center };
 
   return new ImageResponse(<TemplateSwitcher {...templateProps} />, {
