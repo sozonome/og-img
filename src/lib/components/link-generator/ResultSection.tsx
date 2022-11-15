@@ -36,6 +36,8 @@ const LinkGeneratorResultSection = ({
             cursor: "pointer",
             textDecoration: "underline",
           }}
+          fontSize="sm"
+          color="gray"
         >
           {ogImageUrl}
         </Text>

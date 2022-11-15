@@ -7,7 +7,7 @@ type BaseTemplateProps = {
 
 const BaseTemplate = ({ heading, text }: BaseTemplateProps) => {
   return (
-    <div tw="w-screen h-screen p-12 flex flex-col justify-center bg-black">
+    <div tw="w-screen h-screen p-32 flex flex-col justify-center bg-black">
       {heading && (
         <h1
           tw="text-6xl font-bold text-gray-300 leading-tight"
