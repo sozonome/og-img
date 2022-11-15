@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/sozonome/og-img/compare/v1.0.0...v1.1.0) (2022-11-15)
+
+
+### Features
+
+* add center param ([#30](https://github.com/sozonome/og-img/issues/30)) ([fab0a6b](https://github.com/sozonome/og-img/commit/fab0a6bb18f0a9881835bd29de09694d9ab0239a))
+* revamp template ([#29](https://github.com/sozonome/og-img/issues/29)) ([806f35a](https://github.com/sozonome/og-img/commit/806f35aa730a91d0992dbe9de6803a6a0fc26902))
+
+
+### Bug Fixes
+
+* revise width and height fallback ([987f508](https://github.com/sozonome/og-img/commit/987f508bf1ab1312da831c72aeec10738c67f950))
+
+
+### Improvements
+
+* add width & height param ([b443fa1](https://github.com/sozonome/og-img/commit/b443fa133b2d1cb2b47ba0ed5d16505c8769160b))
+* adjust form UI & image template center ([#32](https://github.com/sozonome/og-img/issues/32)) ([f3db902](https://github.com/sozonome/og-img/commit/f3db90242270052f02245b610ece5284fcbf3f17))
+* extract into image template ([#28](https://github.com/sozonome/og-img/issues/28)) ([e944928](https://github.com/sozonome/og-img/commit/e944928028e6c0e291166fc46fce0440779f0632))
+* update seo ([81657a7](https://github.com/sozonome/og-img/commit/81657a795da0a4da650bbc27619f70e94f66f3d1))
+* update seo ([b3d6be5](https://github.com/sozonome/og-img/commit/b3d6be5870c432c793d4a5d2b499df96992a08d1))
+
 ## [1.0.0](https://github.com/sozonome/og-img/compare/v0.1.1...v1.0.0) (2022-10-11)
 
 
