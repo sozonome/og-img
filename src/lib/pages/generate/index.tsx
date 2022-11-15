@@ -37,7 +37,7 @@ const Generate: NextPage = () => {
 
   return (
     <Stack spacing={8} minHeight="70vh" justifyContent="center">
-      <Heading size="lg" color="teal">
+      <Heading size="xl" color="teal">
         Generate OpenGraph image
       </Heading>
 

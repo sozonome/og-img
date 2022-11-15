@@ -19,7 +19,12 @@ const ColorTemplate = ({ heading, text, center }: ColorTemplateProps) => {
           backgroundImage: `linear-gradient(45deg, #f97316, #06b6d4)`,
         }}
       />
-      <div tw={clsx("p-32 flex flex-col", center && "w-screen items-center")}>
+      <div
+        tw={clsx(
+          "p-32 flex flex-col",
+          center && "w-screen items-center text-center"
+        )}
+      >
         {heading && (
           <h1
             tw="text-6xl font-bold text-gray-300 leading-tight"
