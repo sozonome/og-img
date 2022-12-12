@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/sozonome/og-img/compare/v1.1.0...v1.1.1) (2022-12-12)
+
+
+### Improvements
+
+* **template:** revise color template blur ([#35](https://github.com/sozonome/og-img/issues/35)) ([898dbbd](https://github.com/sozonome/og-img/commit/898dbbd3831fb61f24760daa795e992ad2296813))
+
 ## [1.1.0](https://github.com/sozonome/og-img/compare/v1.0.0...v1.1.0) (2022-11-15)
 
 
