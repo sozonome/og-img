@@ -3,8 +3,10 @@ export type OgImageOption = {
   text?: string;
   template?: string;
   center?: boolean;
+  width?: number;
+  height?: number;
 };
 
-export type OgImageOptionConverted = Omit<OgImageOption, "center"> & {
-  center?: string;
+export type OgImageOptionConverted = {
+  [key in keyof OgImageOption]?: string;
 };
