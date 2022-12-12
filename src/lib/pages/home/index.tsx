@@ -14,11 +14,9 @@ const Home = () => {
       <Text>Edge service to generate embeddable dynamic OpenGraph image</Text>
 
       <Flex justifyContent="center">
-        <Link href="/generate" passHref>
-          <Button as="a" colorScheme="teal">
-            Generate
-          </Button>
-        </Link>
+        <Button as={Link} href="/generate" colorScheme="teal">
+          Generate
+        </Button>
       </Flex>
     </Stack>
   );
