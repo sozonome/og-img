@@ -13,12 +13,14 @@ const TemplateSwitcher = ({
   text,
   template,
   center,
+  width,
+  height,
 }: TemplateSwitcherProps) => {
   if (template === PLAIN_TEMPLATE) {
-    return <BaseTemplate {...{ heading, text }} />;
+    return <BaseTemplate {...{ heading, text, width, height }} />;
   }
 
-  return <ColorTemplate {...{ heading, text, center }} />;
+  return <ColorTemplate {...{ heading, text, center, width, height }} />;
 };
 
 export default TemplateSwitcher;

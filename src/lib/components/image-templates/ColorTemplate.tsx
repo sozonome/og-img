@@ -6,16 +6,25 @@ import type { OgImageOption } from "lib/types/ogImageOption";
 
 type ColorTemplateProps = Omit<OgImageOption, "template">;
 
-const ColorTemplate = ({ heading, text, center }: ColorTemplateProps) => {
+const ColorTemplate = ({
+  heading,
+  text,
+  center,
+  width,
+  height,
+}: ColorTemplateProps) => {
+  const aHeight = height ?? 0;
+  const aWidth = width ?? 0;
+  const blurSize = (aWidth < aHeight ? aWidth : aHeight) / 3.2;
+
   return (
     <div tw="w-screen h-screen flex flex-col justify-center bg-gray-900">
       <div
         style={{
           position: "absolute",
-          height: "150%",
-          width: "150%",
-          transform: "translate(-50%)",
-          filter: "blur(200px) saturate(150%)",
+          height: `${aHeight.toString()}px`,
+          width: `${aWidth.toString()}px`,
+          filter: `blur(${blurSize}px) saturate(150%)`,
           backgroundImage: `linear-gradient(45deg, #f97316, #06b6d4)`,
         }}
       />
