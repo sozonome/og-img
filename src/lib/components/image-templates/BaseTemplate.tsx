@@ -10,7 +10,7 @@ const BaseTemplate = ({ heading, text, center }: BaseTemplateProps) => {
   return (
     <div tw="w-screen h-screen p-32 flex flex-col justify-center bg-[#121212]">
       <div
-        tw={clsx("flex flex-col items-center", center && "w-full text-center")}
+        tw={clsx("flex flex-col", center && "w-full items-center text-center")}
       >
         {heading && (
           <h1
