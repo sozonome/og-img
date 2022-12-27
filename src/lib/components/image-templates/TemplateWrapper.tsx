@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 
-import { PLAIN_TEMPLATE } from "lib/constants/template-option";
+import { COLOR_TEMPLATE } from "lib/constants/template-option";
 import type { OgImageOption } from "lib/types/ogImageOption";
 
 import BaseTemplate from "./BaseTemplate";
@@ -16,11 +16,11 @@ const TemplateSwitcher = ({
   width,
   height,
 }: TemplateSwitcherProps) => {
-  if (template === PLAIN_TEMPLATE) {
-    return <BaseTemplate {...{ heading, text, width, height }} />;
+  if (template === COLOR_TEMPLATE) {
+    return <ColorTemplate {...{ heading, text, center, width, height }} />;
   }
 
-  return <ColorTemplate {...{ heading, text, center, width, height }} />;
+  return <BaseTemplate {...{ heading, text, width, height, center }} />;
 };
 
 export default TemplateSwitcher;
