@@ -14,6 +14,7 @@ const Generate: NextPage = () => {
     defaultValues: {
       heading: "Some Title",
       text: "Some description",
+      template: "plain",
     },
   });
 
