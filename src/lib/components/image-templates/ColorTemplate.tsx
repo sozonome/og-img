@@ -18,7 +18,10 @@ const ColorTemplate = ({
   const blurSize = (aWidth < aHeight ? aWidth : aHeight) / 3.2;
 
   return (
-    <div tw="w-screen h-screen flex flex-col justify-center bg-gray-900">
+    <div
+      tw="w-screen h-screen flex flex-col justify-center bg-gray-900"
+      style={{ fontFamily: "Inter" }}
+    >
       <div
         style={{
           position: "absolute",
@@ -35,21 +38,9 @@ const ColorTemplate = ({
         )}
       >
         {heading && (
-          <h1
-            tw="text-6xl font-bold text-gray-300 leading-tight"
-            style={{ fontFamily: "Outfit-Bold" }}
-          >
-            {heading}
-          </h1>
+          <h1 tw="text-6xl font-bold text-gray-300 leading-tight">{heading}</h1>
         )}
-        {text && (
-          <p
-            tw="font-medium text-3xl text-gray-300"
-            style={{ fontFamily: "Outfit-Medium" }}
-          >
-            {text}
-          </p>
-        )}
+        {text && <p tw="font-medium text-3xl text-gray-300">{text}</p>}
       </div>
     </div>
   );

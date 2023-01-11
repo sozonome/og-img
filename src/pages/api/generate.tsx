@@ -27,12 +27,12 @@ export default async function handler(req: NextRequest) {
     height,
     fonts: [
       {
-        name: "Outfit-Medium",
+        name: "Outfit",
         data: outfitMediumFontData,
         weight: 500,
       },
       {
-        name: "Outfit-Bold",
+        name: "Outfit",
         data: outfitBoldFontData,
         weight: 700,
       },
