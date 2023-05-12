@@ -27,8 +27,9 @@ const ColorTemplate = ({
           position: "absolute",
           height: `${aHeight.toString()}px`,
           width: `${aWidth.toString()}px`,
-          filter: `blur(${blurSize}px) saturate(150%)`,
-          backgroundImage: `linear-gradient(45deg, #f97316, #06b6d4)`,
+          filter: `blur(${blurSize}px) saturate(125%)`,
+          backgroundImage: `linear-gradient(45deg, #231e26, #a34e11, #199f9d, #102532)`,
+          opacity: 0.92,
         }}
       />
       <div
