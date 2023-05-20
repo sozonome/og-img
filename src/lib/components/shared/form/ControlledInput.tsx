@@ -1,9 +1,9 @@
-import type { InputProps } from "@chakra-ui/react";
-import { Input } from "@chakra-ui/react";
-import * as React from "react";
+import type { InputProps } from '@chakra-ui/react';
+import { Input } from '@chakra-ui/react';
+import * as React from 'react';
 
-import type { FormControlWrapperProps } from "lib/components/shared/form/FormControlWrapper";
-import FormControlWrapper from "lib/components/shared/form/FormControlWrapper";
+import type { FormControlWrapperProps } from 'lib/components/shared/form/FormControlWrapper';
+import FormControlWrapper from 'lib/components/shared/form/FormControlWrapper';
 
 export type ControlledInputProps = FormControlWrapperProps & InputProps;
 

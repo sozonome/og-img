@@ -1,10 +1,10 @@
-import pickBy from "lodash-es/pickBy";
+import pickBy from 'lodash-es/pickBy';
 
-import { baseUrl } from "lib/constants/baseUrl";
+import { baseUrl } from 'lib/constants/baseUrl';
 import type {
   OgImageOption,
   OgImageOptionConverted,
-} from "lib/types/ogImageOption";
+} from 'lib/types/ogImageOption';
 
 export const buildOgImageUrl = (options: OgImageOption) => {
   const converted: OgImageOptionConverted = {
@@ -15,7 +15,7 @@ export const buildOgImageUrl = (options: OgImageOption) => {
   };
   const purgedOptions = pickBy(converted);
   const urlParams = new URLSearchParams(purgedOptions).toString();
-  const params = urlParams ? `?${urlParams}` : "";
+  const params = urlParams ? `?${urlParams}` : '';
 
   return `${baseUrl}/api/generate${params}`;
 };

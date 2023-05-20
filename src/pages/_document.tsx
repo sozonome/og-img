@@ -1,10 +1,10 @@
-import { ColorModeScript } from "@chakra-ui/react";
-import type { DocumentContext } from "next/document";
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import { ColorModeScript } from '@chakra-ui/react';
+import type { DocumentContext } from 'next/document';
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 
-import customTheme from "lib/styles/customTheme";
+import customTheme from 'lib/styles/customTheme';
 
-const APP_NAME = "nextarter-chakra";
+const APP_NAME = 'nextarter-chakra';
 
 class MyDocument extends Document {
   static getInitialProps(ctx: DocumentContext) {

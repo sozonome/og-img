@@ -1,5 +1,5 @@
-import { Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
-import Link from "next/link";
+import { Button, Flex, Heading, Stack, Text } from '@chakra-ui/react';
+import Link from 'next/link';
 
 const Home = () => {
   return (

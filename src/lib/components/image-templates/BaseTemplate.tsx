@@ -1,19 +1,19 @@
 /* eslint-disable react/no-unknown-property */
 
-import clsx from "clsx";
+import clsx from 'clsx';
 
-import type { OgImageOption } from "lib/types/ogImageOption";
+import type { OgImageOption } from 'lib/types/ogImageOption';
 
-type BaseTemplateProps = Omit<OgImageOption, "template">;
+type BaseTemplateProps = Omit<OgImageOption, 'template'>;
 
 const BaseTemplate = ({ heading, text, center }: BaseTemplateProps) => {
   return (
     <div
       tw="w-screen h-screen p-32 flex flex-col justify-center bg-[#121212]"
-      style={{ fontFamily: "Inter" }}
+      style={{ fontFamily: 'Inter' }}
     >
       <div
-        tw={clsx("flex flex-col", center && "w-full items-center text-center")}
+        tw={clsx('flex flex-col', center && 'w-full items-center text-center')}
       >
         {heading && (
           <h1 tw="text-6xl font-bold text-gray-300 leading-tight">{heading}</h1>

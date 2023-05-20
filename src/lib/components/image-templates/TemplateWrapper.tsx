@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unknown-property */
 
-import { COLOR_TEMPLATE } from "lib/constants/template-option";
-import type { OgImageOption } from "lib/types/ogImageOption";
+import { COLOR_TEMPLATE } from 'lib/constants/template-option';
+import type { OgImageOption } from 'lib/types/ogImageOption';
 
-import BaseTemplate from "./BaseTemplate";
-import ColorTemplate from "./ColorTemplate";
+import BaseTemplate from './BaseTemplate';
+import ColorTemplate from './ColorTemplate';
 
 type TemplateSwitcherProps = OgImageOption;
 

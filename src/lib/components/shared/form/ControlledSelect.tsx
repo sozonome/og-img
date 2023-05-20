@@ -1,9 +1,9 @@
-import type { SelectProps } from "@chakra-ui/react";
-import { Select } from "@chakra-ui/react";
-import * as React from "react";
+import type { SelectProps } from '@chakra-ui/react';
+import { Select } from '@chakra-ui/react';
+import * as React from 'react';
 
-import type { FormControlWrapperProps } from "lib/components/shared/form/FormControlWrapper";
-import FormControlWrapper from "lib/components/shared/form/FormControlWrapper";
+import type { FormControlWrapperProps } from 'lib/components/shared/form/FormControlWrapper';
+import FormControlWrapper from 'lib/components/shared/form/FormControlWrapper';
 
 export type ControlledSelectProps = FormControlWrapperProps &
   SelectProps & {
