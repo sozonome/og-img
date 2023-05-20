@@ -2,10 +2,8 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build": {
-      "outputs": [".next/**", "public/**"],
-      "env": [
-        "NEXT_PUBLIC_BASE_URL"
-      ]
+      "outputs": [".next/**", "!.next/cache/**", "public/**"],
+      "env": ["NEXT_PUBLIC_BASE_URL"]
     },
     "lint": {
       "outputs": [],
