@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/sozonome/og-img/compare/v1.1.1...v1.1.2) (2023-08-13)
+
+
+### Bug Fixes
+
+* adjust centering ([1b145ed](https://github.com/sozonome/og-img/commit/1b145ed17d5490f4931f6b85a39cb1f80068d426))
+* resolve font weight issue ([290d56d](https://github.com/sozonome/og-img/commit/290d56d3acf5d648e8437ed7c52f4ed6179ae1a1))
+
+
+### Improvements
+
+* add theme config ([e5c9927](https://github.com/sozonome/og-img/commit/e5c99276590e4fe44cee2434134927eaa5ec4ff6))
+* make plain template as default ([ecacd3b](https://github.com/sozonome/og-img/commit/ecacd3ba15a5008a3b44e79313b566e6c75e6ab0))
+* set plain as default in form ([8fee889](https://github.com/sozonome/og-img/commit/8fee889df7a1062e0edbedb7853c445b2fa547a0))
+* **theme:** adjust gray color palette ([17cd015](https://github.com/sozonome/og-img/commit/17cd01511b08bcbab8b936a6ca61b8d60952e873))
+
 ### [1.1.1](https://github.com/sozonome/og-img/compare/v1.1.0...v1.1.1) (2022-12-12)
 
 
