@@ -6,7 +6,7 @@ import TemplateSwitcher from 'lib/components/image-templates/TemplateWrapper';
 import { outfitBold, outfitMedium } from 'lib/utils/font/outfit';
 
 export const config = {
-  runtime: 'experimental-edge',
+  runtime: 'edge',
 };
 
 export default async function handler(req: NextRequest) {
