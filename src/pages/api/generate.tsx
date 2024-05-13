@@ -1,5 +1,4 @@
-/* eslint-disable react/no-unknown-property */
-import { ImageResponse } from '@vercel/og';
+import { ImageResponse } from 'next/og';
 import type { NextRequest } from 'next/server';
 
 import TemplateSwitcher from 'lib/components/image-templates/TemplateWrapper';
